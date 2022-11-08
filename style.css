@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    color: #f2f2f2;
+    font-family: monospace;
+    height: 100vh;
+}
+
+.container > .display {
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 10px;
+}
+
+.container > .display > .tries {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.container > .display.gameOver {
+    display: none;
+}
+.controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.controls input[type=text] {
+    height: 50px;
+    width: 290px;
+    text-align: center;
+}
+
+.controls button {
+    height: 40px;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: lime;
+    color: #333;
+    border: none;
+}
+
+.container .guess.hide {
+    display: none;
+}
+
+.container .reset {
+    background-color: rgba(255, 0, 0, 0.37);
+    color: #f2f2f2;
+}
+
+.container .reset.hide {
+    display: none;
+}
+.container .error {
+    position: absolute;
+    font-size: 32px;
+    top: 20%;
+    background-color: rgba(255, 0, 0, 0.37);
+    padding: 10px 50px;
+}
+
+.container .error.hide {
+    display: none;
+}
